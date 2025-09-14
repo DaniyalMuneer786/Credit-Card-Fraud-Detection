@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <!-- <link rel="stylesheet" href="Form.css"> -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/Form.css') }}">
+</head>
+<body>
+
+    <style>
+        body{
+            background-image: url('/static/21.png');
+            background-repeat: no-repeat;
+            background-size: 1365px 640px;
+            opacity: 0.7;
+        }
+        
+        body{
+            background-color: rgb(156, 123, 189);
+            height: 1200px;
+        }
+    </style>
+
+    <div id="p1">
+    <h1 style="margin-left: 350px; font-size: 30px;">Credit Card Fraud Detection Application</h1> 
+    </div>
+
+    <div>
+        <img src="/static/20.jpg" alt="" style="height: 200px; width: 23%;">
+    </div>
+
+    <div style="margin-top: -203px;">
+        <img src="/static/22.jpg" alt="" style="margin-left: 1020px; height: 200px;">
+    </div>
+
+
+    <div id="p2"><h1 style="margin-left: 600px; font-size: 30px;">Form</h1></div>
+
+
+<div>
+    <div id="p3">
+        <form action="/predict", method="POST">
+            <br><br>
+            <!-- Input field for credit card number -->
+            <label for="cc_num" class="label1">Credit Card Number:</label><br><br>
+            <input type="text" id="cc_num" name="cc_num" required class="input1"><br><br>
+            
+            <!-- Input field for merchant -->
+            <label for="merchant" class="label1">Merchant:</label><br><br>
+            <input type="text" id="merchant" name="merchant" required class="input1"><br><br>
+            
+            <!-- Input field for category -->
+            <label for="category" class="label1">Category:</label><br><br>
+            <input type="text" id="category" name="category" required class="input1"><br><br>
+            
+            <!-- Input field for amount -->
+            <label for="amt" class="label1">Amount:</label><br><br>
+            <input type="text" id="amt" name="amt" required class="input1"><br><br>
+            
+            <!-- Input field for city -->
+            <label for="city" class="label1">City:</label><br><br>
+            <input type="text" id="city" name="city" required class="input1"><br><br>
+            
+        </div>
+        
+        <div id="p4" style="margin-left: 625px;">
+            <br><br>
+
+            <!-- Input field for state -->
+            <label for="state" class="label2">State:</label><br><br>
+            <input type="text" id="state" name="state" required class="input2"><br><br>
+            
+            <!-- Input field for latitude -->
+            <label for="lat" class="label2">Latitude:</label><br><br>
+            <input type="text" id="lat" name="lat" required class="input2"><br><br>
+            
+            <!-- Input field for longitude -->
+            <label for="long" class="label2">Longitude:</label><br><br>
+            <input type="text" id="long" name="long" required class="input2"><br><br>
+            
+            <!-- Input field for transaction date -->
+            <label for="trans_date" class="label2">Transaction Date:</label><br><br>
+            <input type="text" id="trans_date" name="trans_date" required class="input2"><br><br>
+            
+            <!-- Input field for transaction time -->
+            <label for="trans_time" class="label2">Transaction Number:</label><br><br>
+            <input type="text" id="trans_num" name="trans_num" required class="input2"><br><br>
+            
+        </div>
+        
+        <div id="p5">
+            <!-- Submit button --> 
+            <input type="submit" value="Predict" style="background-color: cadetblue; color: white; font-size: 20px; width: 70%; height: 45px;">
+        </div>
+        <br><br>
+    </form>
+    
+    
+</div>
+</div>
+        
+    <br>    
+</body>
+</html>
